@@ -66,7 +66,7 @@ var songsDatabase = [
 
 function dataBaseSearcher(Song) {
   for (var i = 0; i < songsDatabase.length; i++) {
-    if (Song == songsDatabase[i]) {
+    if (Song.toLowerCase() == songsDatabase[i].toLowerCase()) {
       document.getElementById("songName").innerHTML = Song;
       return 1;
     }
@@ -109,7 +109,10 @@ function search() {
   if (P)
     document.getElementById("songName").innerHTML =
       "Sorry, couldn't find the song";
-  else document.getElementById("songName").innerHTML = userWants;
+  else {
+  document.getElementById("songName").innerHTML = userWants;
+    iconChange();
+}
 }
 
 var queue = [];
