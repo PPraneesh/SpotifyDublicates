@@ -79,6 +79,8 @@ for (var i = 0; i < songsDatabase.length; i++) {
     var currentSong = event.target.innerHTML;
     songPlayer(currentSong);
     document.getElementById("songName").innerHTML = currentSong;
+    if(!playingNow.paused)
+    document.getElementById("Icon").className = "fa-regular fa-circle-pause";
   });
 }
 
@@ -111,7 +113,9 @@ function search() {
       "Sorry, couldn't find the song";
   else {
   document.getElementById("songName").innerHTML = userWants;
-    iconChange();
+  if(!playingNow.paused)
+  document.getElementById("Icon").className = "fa-regular fa-circle-pause";
+    
 }
 }
 
