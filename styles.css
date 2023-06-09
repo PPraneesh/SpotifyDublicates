@@ -163,6 +163,7 @@ li{
 .fa-regular{
     font-size: 3rem;
     cursor: pointer;
+    color: #F0EBE3;
 }
 .Qsubmit{
     border-radius: 0.5rem;
