@@ -66,7 +66,7 @@ var songsDatabase = [
 
 function dataBaseSearcher(Song) {
   for (var i = 0; i < songsDatabase.length; i++) {
-    if (Song.toLowerCase() == songsDatabase[i].toLowerCase()) {
+    if (Song == songsDatabase[i]) {
       document.getElementById("songName").innerHTML = Song;
       return 1;
     }
