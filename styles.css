@@ -175,3 +175,17 @@ li{
 .btn-h2cont:hover{
     background-color: #474e4ea5;
 }
+@media screen and (max-width:900px) {
+    .parentContainer{
+        flex-direction: column;
+    }
+    .container1{
+        order:1;
+        width: auto;
+        margin-bottom: 0.8rem;
+    }
+    .container2{
+        order:2;
+        width:auto;
+    }
+}
