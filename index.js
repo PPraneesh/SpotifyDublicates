@@ -1,4 +1,3 @@
-alert("This is a desktop website, please open it on a desktop or you can try it in desktop mode on your mobile device");
 var playingNow;
 var userWants;
 var j = 1;
